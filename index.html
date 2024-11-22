@@ -11,13 +11,20 @@
       }
       .topnav {
         background-color: #515b3a;
-        padding-bottom: 40px;
+        display: flex; /* Use flexbox for layout */
+        align-items: center; /* Vertically align items */
+        padding: 30px 20px 20px; /* Add some padding for spacing */
       }
       ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
+        
+        display: flex; /* Align navigation links horizontally */
+        gap: 10px; /* Add spacing between links */
+        margin-left: auto; /* Push links to the right */
+        
         background-color: #515B3A;
         font-family: "Sen", sans serif;
         font-size: 15px;
@@ -36,11 +43,9 @@
       .active {
         background-color: #04AA6D;
       }
-      .logo{
-        width: 30%;
-        height: auto;
-        float: left;
-        vertical-align: middle;
+      .logo img {
+        max-height: 25px; /* Set a max height for the logo */
+        height: auto; /* Ensure it maintains aspect ratio */
       }
     </style>
   </head>
