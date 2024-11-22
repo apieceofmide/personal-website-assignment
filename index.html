@@ -10,33 +10,51 @@
         background-color: #FDEFC8;
       }
       .topnav {
+        background-color: #515b3a;
+        padding-bottom: 40px;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
         overflow: hidden;
         background-color: #515B3A;
         font-family: "Sen", sans serif;
-      }
-      .topnav a{
-        float: left;
-        color: #FDEFC8;
-        
-        padding: 0px 0px 0px 0px;
-        text-decoration: none;
         font-size: 15px;
       }
+
+      li {
+        float: left;
+        text-decoration: none;
+      }
+      li a {
+        display: block;
+        padding: 8px;
+        text-decoration: none;
+        color: #FDEFC8;
+      }
+      .active {
+        background-color: #04AA6D;
+      }
       .logo{
-        width: 55%;
+        width: 30%;
         height: auto;
         float: left;
+        vertical-align: middle;
       }
     </style>
   </head>
   <body>
     <div class="topnav">
       <a class="logo" href="#logo"> <img src="Ayomide Ibidapo.svg" alt="logo"></a>
-      <a class="active" href="#ux-design">UX Design</a>
-      <a href="#graphic-design">Graphic Design</a>
-      <a href="#photography">Photography</a>
-      <a href="#about-me">About Me</a>
-      <a href="#resume">Resume</a>
+      <ul>
+        <li><a class="active" href="#ux-design">UX Design</a></li>
+        <li><a href="#graphic-design">Graphic Design</a></li>
+        <li><a href="#photography">Photography</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
+     
 </div>
   </body>
 </html>
