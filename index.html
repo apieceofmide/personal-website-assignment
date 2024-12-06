@@ -8,6 +8,8 @@
     <style>
       body{
         background-color: #FDEFC8;
+        margin: 0;
+        padding: 0;
       }
       .topnav {
         background-color: #515b3a;
@@ -15,7 +17,16 @@
         align-items: center; /* Vertically align items */
         padding: 30px 20px 20px; /* Add some padding for spacing */
       }
-      ul {
+      .bottomnav {
+        background-color: #515b3a;
+        
+        align-items: center; /* Vertically align items */
+        padding: 15px; /* Add some padding for spacing */
+        position: fixed;
+        bottom: 0;
+      }
+      .top {
+        background-color: #515b3a;
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -25,41 +36,86 @@
         gap: 10px; /* Add spacing between links */
         margin-left: auto; /* Push links to the right */
         
-        background-color: #515B3A;
         font-family: "Sen", sans serif;
         font-size: 15px;
       }
+      
+       .bottom {
+        background-color: #515b3a;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        
+        display: flex; /* Align navigation links horizontally */
+        gap: 1px; /* Add spacing between links */
+        margin-left: auto; /* Push links to the right */
+        
+        font-family: "Sen", sans serif;
+        
+      }
+      
 
       li {
         float: left;
         text-decoration: none;
       }
+      
+      .bottom li {
+        float: right;
+        
+      }
+      
       li a {
         display: block;
         padding: 8px;
         text-decoration: none;
         color: #FDEFC8;
       }
+      li a:hover:not(.active) {
+        border-bottom: 3px solid;
+        padding-bottom: 5px;
+      }
       .active {
-        background-color: #04AA6D;
+        border-bottom: 3px solid;
+        padding-bottom: 5px;
       }
       .logo img {
         max-height: 25px; /* Set a max height for the logo */
         height: auto; /* Ensure it maintains aspect ratio */
+      }
+      .socials img {
+        display: flex;
+        width: 40px;
+        height: auto;
       }
     </style>
   </head>
   <body>
     <div class="topnav">
       <a class="logo" href="#logo"> <img src="Ayomide Ibidapo.svg" alt="logo"></a>
-      <ul>
-        <li><a class="active" href="#ux-design">UX Design</a></li>
+      <ul class="top">
+        <li><a href="#ux-design">UX Design</a></li>
         <li><a href="#graphic-design">Graphic Design</a></li>
         <li><a href="#photography">Photography</a></li>
         <li><a href="#about-me">About Me</a></li>
         <li><a href="#resume">Resume</a></li>
-      </ul>
-     
-</div>
+      </ul>  
+    </div>
+    
+    <div class="bottomnav">
+     <h3>
+       Lets create something fun!
+      </h3>
+      <h4>
+        mideibidapo@gmail.com < 3
+      </h4>
+        
+        <ul class="bottom">
+          <li><a class="socials" href="#linkedin"><img src="Linkedin.png" alt="Linkedin Logo"></a></li>
+          <li><a class="socials" href="#twitter"><img src="Twitter.png" alt="X Logo"></a></li>
+        </ul>
+    </div>
+      
   </body>
 </html>
