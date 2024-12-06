@@ -19,11 +19,17 @@
       }
       .bottomnav {
         background-color: #515b3a;
-        
-        align-items: center; /* Vertically align items */
-        padding: 15px; /* Add some padding for spacing */
+        display: flex; /* Make the bottomnav a flex container */
+        justify-content: space-between; /* Separate the text and list */
+        align-items: center; /* Center items vertically */
+        padding: 5px 10px 5px 10px; /* Add some padding for spacing */
         position: fixed;
         bottom: 0;
+        width: 100%;  
+        
+        font-family: "Sen", sans serif;
+        font-size: 20px;
+        color: #FDEFC8;
       }
       .top {
         background-color: #515b3a;
@@ -32,40 +38,27 @@
         padding: 0;
         overflow: hidden;
         
-        display: flex; /* Align navigation links horizontally */
-        gap: 10px; /* Add spacing between links */
-        margin-left: auto; /* Push links to the right */
+        display: flex;
+        gap: 10px; 
+        margin-left: auto; 
         
         font-family: "Sen", sans serif;
         font-size: 15px;
       }
-      
-       .bottom {
+       .bottomlist {
         background-color: #515b3a;
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
         
-        display: flex; /* Align navigation links horizontally */
-        gap: 1px; /* Add spacing between links */
-        margin-left: auto; /* Push links to the right */
-        
-        font-family: "Sen", sans serif;
-        
+        display: flex;
+        margin-left: auto;
       }
-      
-
       li {
         float: left;
         text-decoration: none;
-      }
-      
-      .bottom li {
-        float: right;
-        
-      }
-      
+      }      
       li a {
         display: block;
         padding: 8px;
@@ -81,13 +74,14 @@
         padding-bottom: 5px;
       }
       .logo img {
-        max-height: 25px; /* Set a max height for the logo */
-        height: auto; /* Ensure it maintains aspect ratio */
+        max-height: 25px;
+        height: auto;
       }
       .socials img {
         display: flex;
-        width: 40px;
+        width: 55px;
         height: auto;
+        position: relative;
       }
     </style>
   </head>
@@ -104,17 +98,18 @@
     </div>
     
     <div class="bottomnav">
-     <h3>
-       Lets create something fun!
-      </h3>
-      <h4>
-        mideibidapo@gmail.com < 3
-      </h4>
-        
-        <ul class="bottom">
+     
+       <p>
+         Lets create something fun! <br>
+         mideibidapo@gmail.com < 3
+       </p>
+    
+      
+        <ul class="bottomlist">
           <li><a class="socials" href="#linkedin"><img src="Linkedin.png" alt="Linkedin Logo"></a></li>
-          <li><a class="socials" href="#twitter"><img src="Twitter.png" alt="X Logo"></a></li>
+          <li><a class="socials" style="padding-right:40px;" href="#twitter"><img src="Twitter.png" alt="X Logo"></a></li>
         </ul>
+       
     </div>
       
   </body>
